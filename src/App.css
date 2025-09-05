@@ -36,3 +36,174 @@
     transform: rotate(360deg);
   }
 }
+
+/* ========== Common Styles ========== */
+label {
+  margin-right: 10px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+input {
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding-left: 10px;
+}
+
+input::placeholder {
+  color: #888;
+}
+
+/* Center everything in viewport */
+body,
+html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center; /* horizontal center */
+  align-items: center; /* vertical center */
+  background-color: #f8f9fa; /* light background */
+}
+
+/* ========== Read.css ========== */
+.show-table {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 600px;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px black;
+  padding: 50px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* ========== Enter_Retrieve_Data ========== */
+.show-options {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  margin: 30px auto;
+}
+
+.show-options button {
+  margin-bottom: 30px;
+  padding: 25px;
+  border-radius: 20px;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  background-color: rgb(45, 210, 158);
+}
+
+/* ========== Login & Register Forms ========== */
+.login-form,
+.register-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 358px;
+  border: 2px solid black;
+  box-shadow: 5px 5px 5px black;
+  border-radius: 10px;
+  padding: 30px;
+  background-color: #fff;
+}
+
+.two-btns {
+  width: 100%;
+  display: flex;
+  border: 1px solid black;
+  padding: 4px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #ecf0ff;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+/* Active Login button */
+.login-btn {
+  background-color: #465ff1;
+  padding: 10px 0;
+  width: 50%;
+  border-radius: 8px;
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* Inactive Signup button (on Login page) */
+.signup-btn {
+  width: 50%;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ecf0ff;
+  color: #9c9aa5;
+  font-weight: 400;
+}
+
+/* Swap colors when inside Register form */
+.register-form .login-btn {
+  background-color: #ecf0ff;
+  color: #9c9aa5;
+  font-weight: 400;
+}
+
+.register-form .signup-btn {
+  background-color: #465ff1;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* Inputs */
+.label-input-field {
+  width: 100%;
+}
+
+.label-input-field label {
+  margin-bottom: 10px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* Labels */
+.login-form label,
+.register-form label {
+  display: block;
+}
+
+/* Submit button */
+.click-btn {
+  background-color: #465ff1;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 13px 0;
+  width: 100%;
+  text-align: center;
+  border-radius: 8px;
+  margin-top: 10px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* Error messages */
+.email-error,
+.password-error {
+  color: red;
+  font-size: 14px;
+}
